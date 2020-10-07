@@ -18,12 +18,12 @@ Do the following:
    HINT: no function required
 */
 
-let votingAge = 0;
+const votingAge = 19;
 
-if (votingAge > 18){
-    console.log(true);
+if(votingAge >= 18){
+  console.log(true);
 } else {
-    console.log (false);
+  console.log(false);
 }
 
 /*
@@ -157,45 +157,44 @@ Use the game function below to do the following:
   var computerChoice = Math.random();
     if (computerChoice < .34){
         console.log('rock');
-    }
-    if (computerChoice <= .67){
-        console.log('paper');
+    } else if (computerChoice <= .67){
+        console.log('paper'); 
     } else {
         console.log('scissors');
     }
 
-var compare = function game(computer, user){
+function game(computer, user){
     if (computer === user){
-        return `It's a tie!`;
+        return `it's a tie`;
     }
     if (computer === "rock"){
         if(user === "scissors"){
-            return "you lose";
+            return "you lose!";
         } else {
-            return "you win";
+            return "you win!";
         }
     }
     if (computer === "paper"){
         if(user === "rock"){
-            return "you lose";
+            return "you lose!";
         } else {
             if (user === "scissors"){
-                return "you win";
+                return "you win!";
             }
         }
     }
     if(computer === "scissors"){
         if (user === "rock"){
-            return "you win";
+            return "you win!";
         } else {
             if (user === "paper"){
-                return "you lose";
+                return "you lose!";
             }
         }
     }
 }
 
-
+// console.log(game());
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
 //Metric Converter 
