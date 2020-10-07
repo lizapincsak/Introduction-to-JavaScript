@@ -43,7 +43,7 @@ if(feeling === "happy"){
 } else{
     var feeling;
 }
-console.log(feeling);
+// console.log(feeling);
 
 
 /*
@@ -59,7 +59,7 @@ Do the following:
 
 
 var num = parseInt("1999");
-console.log(num);
+// console.log(num);
 
 /*
 Task 1d - Multiply
@@ -73,7 +73,7 @@ Do the following:
 function multiply(a,b){
     return a*b;
 }
-console.log(multiply(3,4));
+// console.log(multiply(3,4));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -88,7 +88,7 @@ Do the following:
 function dogYears(age){
   return age * 7;
  }
-console.log(dogYears(1));
+// console.log(dogYears(1));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -137,7 +137,7 @@ function hungryDog(weight, age){
   }
 }
 
-console.log(hungryDog(15, 1));
+// console.log(hungryDog(15, 1));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -164,32 +164,32 @@ Use the game function below to do the following:
         console.log('scissors');
     }
 
-var compare = function game(choice1, choice2){
-    if (choice1 === choice2){
-        return "It is a tie!";
+var compare = function game(computer, user){
+    if (computer === user){
+        return `It's a tie!`;
     }
-    if (choice1 === "rock"){
-        if(choice2 === "scissors"){
-            return "you lost";
+    if (computer === "rock"){
+        if(user === "scissors"){
+            return "you lose";
         } else {
             return "you win";
         }
     }
-    if (choice1 === "paper"){
-        if(choice2 === "rock"){
-            return "you lost";
+    if (computer === "paper"){
+        if(user === "rock"){
+            return "you lose";
         } else {
-            if (choice2 === "scissors"){
+            if (user === "scissors"){
                 return "you win";
             }
         }
     }
-    if(choice1 === "scissors"){
-        if (choice2 === "rock"){
+    if(computer === "scissors"){
+        if (user === "rock"){
             return "you win";
         } else {
-            if (choice2 === "paper"){
-                return "you lost";
+            if (user === "paper"){
+                return "you lose";
             }
         }
     }
